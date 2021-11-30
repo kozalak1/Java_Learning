@@ -1,5 +1,7 @@
 package Java_Learning;
 
+import java.util.Scanner;
+
 public class Q_13 {
 
 	public static void main(String[] args) {
@@ -11,7 +13,9 @@ public class Q_13 {
 
 			yanıt b ise,
 
-			"yine de ilgilendiğiniz için teşekkür ederiz" mesajı yazdırılır yanıt c ise,
+			"yine de ilgilendiğiniz için teşekkür ederiz" mesajı yazdırılır 
+			
+			yanıt c ise,
 
 			"Üzgünüz, şu anda herhangi bir yardım yok" mesajı yazdırılır
 
@@ -20,7 +24,32 @@ public class Q_13 {
 			"Geçersiz giriş, lütfen tekrar deneyin!" yazdırılır */
 
 		
+		Scanner scan=new Scanner(System.in);
+		System.out.println("lutfen yanıtınızı giriniz :");
+		char yanıt=scan.next().charAt(0);
 		
+			
+				
+		if (yanıt=='a') {
+			System.out.println("Talebiniz işleniyor");
+		} 
+		
+		else if (yanıt=='b') {
+			
+			System.out.println("yine de ilgilendiğiniz için teşekkür ederiz");
+		}
+		
+		
+		else if (yanıt=='c') {
+			
+			System.out.println("Üzgünüz, şu anda herhangi bir yardım yok");
+		}
+		
+		
+		
+		else {
+			System.out.println("Geçersiz giriş, lütfen tekrar deneyin!");
+		}
 		
 		
 	}
