@@ -25,6 +25,26 @@ public class Q_16 {
 	    // Yazdır ==> isim1, isim2 ye eklenemiyor */
 		
 		
+		String isim1="Cumali";
+		
+		String isim2="Cemal";
+		
+		if (isim1.length()%2==0) {
+			
+			String yeniAd1=isim1.substring(0, isim1.length()/2);
+			
+			String yeniAd2=isim1.substring(isim1.length()/2);
+		
+			String yeniAd=yeniAd1.concat(isim2+yeniAd2);
+			
+			System.out.println(yeniAd);
+			
+		} else {
+
+			System.out.println("isim1, isim2 ye eklenemiyor");
+			
+		}
+		
 		
 		
 	}
