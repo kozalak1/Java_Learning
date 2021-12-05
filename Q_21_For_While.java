@@ -1,5 +1,7 @@
 package Java_Learning;
 
+import java.util.Scanner;
+
 public class Q_21_For_While {
 
 	public static void main(String[] args) {
@@ -12,8 +14,29 @@ public class Q_21_For_While {
 		
 		 */
 
+		Scanner scan=new Scanner(System.in);
 		
+		System.out.print("lutfen pozitif bir tam sayı giriniz : ");
 		
+		int sayi=scan.nextInt();
+		
+		int result=1;
+		
+				
+		if (sayi<0 ) {
+			 System.out.println("lutfen pozitif bir sayı giriniz");
+			
+		} else {
+
+			for (int i = sayi; i>=1; i--) {
+			
+				result*=i;
+			}	
+			
+			
+			System.out.println(result);	
+			
+		}
 		
 	}
 

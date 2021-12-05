@@ -1,5 +1,7 @@
 package Java_Learning;
 
+import java.util.Iterator;
+
 public class Q_20_For_While {
 
 	public static void main(String[] args) {
@@ -13,10 +15,20 @@ public class Q_20_For_While {
 		
 		*/
 
+		String str="Javaisalsoeasy";
+				
+		String tekrarEden="";
 		
+		for (int i = 0; i < str.length(); i++) {
 		
+			
+			
+			if (str.substring(i+1).contains(charAt(i))) {
+				tekrarEden.concat(charAt(i));
+			}
+	}
 		
-		
+		System.out.println(tekrarEden);
 	}
 
 }
