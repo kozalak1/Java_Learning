@@ -21,23 +21,27 @@ public class Q_18_For_While {
 
 		Scanner scan=new Scanner(System.in);
 		
+		
 		System.out.print("lutfen bir cümle yazınız : ");
 
-		String cümle=scan.nextLine();
+		String cümle=scan.nextLine().toLowerCase();
+		
 		
 		System.out.print("lutfen bir karakter yazınız : ");
 	
-		char karakter=scan.next().charAt(0);
+		char karakter=scan.next().toLowerCase().charAt(0);
 		
-		int sayac=0;
+				int sayac=0;
 		
 				for (int i = 0; i < cümle.length(); i++) {
 			
 					if(cümle.charAt(i)==karakter)
+						
 						sayac++;
 						
 		}
-		System.out.println("Girdiğiniz karakterin sayısı : " + sayac);
+		
+				System.out.println("Girdiğiniz karakterin cümledeki sayısı : " + sayac);
 		}	
 			
 }

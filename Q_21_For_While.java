@@ -18,26 +18,24 @@ public class Q_21_For_While {
 		
 		System.out.print("lutfen pozitif bir tam sayı giriniz : ");
 		
-		int sayi=scan.nextInt();
+		double sayi=scan.nextDouble();
 		
-		int result=1;
-		
-				
+			double result=1;
+						
 		if (sayi<0 ) {
 			 System.out.println("lutfen pozitif bir sayı giriniz");
 			
 		} else {
 
-			for (int i = sayi; i>=1; i--) {
+			for (double i = sayi; i>=1; i--) {
 			
 				result*=i;
 			}	
-			
-			
+						
 			System.out.println(result);	
 			
 		}
-		
+	
 	}
 
 }
