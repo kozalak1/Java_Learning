@@ -1,6 +1,7 @@
 package Java_Learning;
 
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class Q_20_For_While {
 
@@ -16,24 +17,29 @@ public class Q_20_For_While {
 		
 		*/
 
-		String str="Javaisalsoeasy";
-		
-			
+				
+		Scanner scan=new Scanner(System.in);
+		System.out.print("lutfen bir cumle yazınız :");
+		String str=scan.nextLine();
+					
 		String tekrarEden=" ";
 		
 		for (int i = 0; i < str.length(); i++) {
 		
+			if (str.substring(i+1).contains(str.substring(i, i+1))) {
+				
+				if (!tekrarEden.contains(str.substring(i, i+1))) {
+					
+					tekrarEden=tekrarEden+str.charAt(i)+ " ";
+				}
 			
-			
-			if (str.substring(i+1).contains("charAt(i)")) {
-				
-				tekrarEden.concat("charAt(i)");
-				
-				
 			}
 	}
 		
-		 System.out.println(tekrarEden); 
+		 System.out.print(tekrarEden); 
+		 
+		 scan.close();
 	}
 
+	
 }
