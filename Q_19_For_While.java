@@ -28,37 +28,6 @@ public class Q_19_For_While {
 		int sayi2=scan.nextInt();
 		
 		
-		GCD (sayi1, sayi2); // En Büyük Ortak Bölen / EBOB
-		
-		LCM (sayi1, sayi2); // En Küçük Ortak Kat / EKOK
-		
-		
-		
-	
-		
-		
-	}
-
-	private static void LCM(int sayi1, int sayi2) {
-		
-		
-		
-		do {
-			
-			
-			
-		} while (condition);
-		
-		
-	}
-
-	private static void GCD(int sayi1, int sayi2) {
-		
-		
-		while (condition) {
-			
-		}
-		
 		
 		
 	}
