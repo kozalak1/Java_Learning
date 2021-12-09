@@ -10,8 +10,9 @@ public class Q_25_For_While {
 		
 
 		for (int i = 'a'; i <='z'; i++) {
+			char chr=(char) i;
 			
-			System.out.println("Ascii value of "+ "=" + i );
+			System.out.println(chr +"--"+ "Ascii value of "+ "=" + i );
 		}
 		
 	}
