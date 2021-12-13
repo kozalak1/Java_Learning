@@ -11,7 +11,7 @@ public class Q_22_For_While {
 			*/
 		
 
-		for (int i = 100; i >=0; i-=2) {
+		for (int i = 100; i >=0; i-=2) {	// başlangıç değerini 100 verdik ve 2 azaltarak çift sayıları bulduk
 			
 			System.out.print(i + " ");
 			

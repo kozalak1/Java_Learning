@@ -25,17 +25,17 @@ public class Q_16 {
 	    // Yazdır ==> isim1, isim2 ye eklenemiyor */
 		
 		
-		String isim1="Cumali";
+		String isim1="cumali";
 		
-		String isim2="Cemal";
+		String isim2="CEMAL";
 		
 		if (isim1.length()%2==0) {
 			
-			String yeniAd1=isim1.substring(0, isim1.length()/2);
+			String yeniAd1=isim1.substring(0, isim1.length()/2); // isim1 in 1. yarısı
 			
-			String yeniAd2=isim1.substring(isim1.length()/2);
+			String yeniAd2=isim1.substring(isim1.length()/2);	//  isim1 in 2. yarısı
 		
-			String yeniAd=yeniAd1.concat(isim2+yeniAd2);
+			String yeniAd=yeniAd1.concat(isim2+yeniAd2);		// isimleri birleştiriyoruz
 			
 			System.out.println(yeniAd);
 			

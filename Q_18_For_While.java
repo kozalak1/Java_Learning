@@ -24,12 +24,12 @@ public class Q_18_For_While {
 		
 		System.out.print("lutfen bir cümle yazınız : ");
 
-		String cümle=scan.nextLine().toLowerCase();
+		String cümle=scan.nextLine().toLowerCase(); // cumleyi alıp küçük harfe çevirdim
 		
 		
 		System.out.print("lutfen bir karakter yazınız : ");
 	
-		char karakter=scan.next().toLowerCase().charAt(0);
+		char karakter=scan.next().toLowerCase().charAt(0); // 1 karakter alıp küçük harfe çevirdim
 		
 				int sayac=0;
 		

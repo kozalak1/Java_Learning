@@ -23,7 +23,7 @@ public class Q_17 {
 		
 		 if (ad.length()>=2) {
 			 
-			String yeniAd=ad.substring(ad.length()-2);
+			String yeniAd=ad.substring(ad.length()-2);	// "ad" ın son 2 harfini alıp yeni bir string yapıyoruz
 			
 			System.out.println(yeniAd+yeniAd+yeniAd);
 			

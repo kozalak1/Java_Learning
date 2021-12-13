@@ -9,8 +9,8 @@ public class Q_25_For_While {
 		 // ornek : Ascii value of a = 97 
 		
 
-		for (int i = 'a'; i <='z'; i++) {
-			char chr=(char) i;
+		for (int i = 'a'; i <='z'; i++) { 		// varible int oldugundan ve 'a' şeklinde yazıldığı için bir char karakterin ascii değerini alır
+			char chr=(char) i;					// i int bir değer oldugundan sahip olduğu değeri char a dönüştürüyoruz (conversion)
 			
 			System.out.println(chr +"--"+ "Ascii value of "+ "=" + i );
 		}

@@ -17,15 +17,15 @@ public class Q_26_For_While {
 		System.out.println("lutfen bir sayı giriniz");
 		int sayi=scan.nextInt();
 				
-		String yeniSayi=Integer.toString(sayi);
+		String yeniSayi=Integer.toString(sayi);	// girilen sayı ile matematiksel bir işlem yapmayacağım için string objesi oluşturup sayıyı string e çevirdim
 		
-		String yeniSayii="";
+		String yeniSayii="";			// yeni bir string oluşturdum, tersine çevrilince bu objeye assign edeceğim
 		
 				
-		for (int i = yeniSayi.length()-1; i >= 0; i--) {
+		for (int i = yeniSayi.length()-1; i >= 0; i--) { // for döngüsü ile string ifadenin sondan başa doğru getirmesini istedim
 				
-			yeniSayii=yeniSayii.concat(yeniSayi.substring(i,i+1));  // yeniSayii=yeniSayii+yeniSayi.charAt(i);
-		}
+			yeniSayii=yeniSayii.concat(yeniSayi.substring(i,i+1));  // yeniSayii=yeniSayii+yeniSayi.charAt(i);----Kodu bu şekilde de yazabiliriz 
+		}															// tek tek her bir karakteri yeni oluşturdugum stringe ekledim	
 		
 		System.out.println(yeniSayii);
 		
