@@ -22,15 +22,16 @@ public class Q_20_For_While {
 		System.out.print("lutfen bir cumle yazınız :");
 		String str=scan.nextLine();
 					
-		String tekrarEden=" ";
+		String tekrarEden=" "; // tekrar eden karakterleri atamak için boş bir string(tekrarEden) oluşturduk
 		
-		for (int i = 0; i < str.length(); i++) {
+		for (int i = 0; i < str.length(); i++) {	// kullanıcının girdiği cümlenin başından sonuna doğru gittik
 		
-			if (str.substring(i+1).contains(str.substring(i, i+1))) {
+			if (str.substring(i+1).contains(str.substring(i, i+1))) { 	// girilen cümlenin 2. karakterinden sonrası ilk karakteri içeriyor mu? evetse;   
+	
 				
-				if (!tekrarEden.contains(str.substring(i, i+1))) {
+				if (!tekrarEden.contains(str.substring(i, i+1))) { 		// "tekrarEden" de bu karakteri içermiyorsa;
 					
-					tekrarEden=tekrarEden+str.charAt(i)+ " ";
+					tekrarEden=tekrarEden+str.charAt(i)+ " ";			// bu karakteri tekrarEden e ekle
 				}
 			
 			}

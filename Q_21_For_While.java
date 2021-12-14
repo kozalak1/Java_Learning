@@ -18,9 +18,9 @@ public class Q_21_For_While {
 		
 		System.out.print("lutfen pozitif bir tam sayı giriniz : ");
 		
-		double sayi=scan.nextDouble();
+		double sayi=scan.nextDouble(); // kullanıcı ondalıklı sayı da girebileceği için double data type ını kullandık
 		
-			double result=1;
+			double result=1; // çarpma işleminde 1 etkisiz eleman olduğu için ilk değer olarak atadık
 						
 		if (sayi<0 ) {
 			 System.out.println("lutfen pozitif bir sayı giriniz");

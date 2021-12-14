@@ -20,14 +20,15 @@ public class Q_17 {
 		System.out.print("lutfen bir isim yazınız : ");
 
 		String ad=scan.next();
-		
-		 if (ad.length()>=2) {
+				
+		 if (ad.length()>=2) {		// kullanıcının en az 2 karakterli bir isim girmesini kontrol ediyoruz
 			 
-			String yeniAd=ad.substring(ad.length()-2);	// "ad" ın son 2 harfini alıp yeni bir string yapıyoruz
+			String yeniAd=ad.substring(ad.length()-2);	// kullanıcının girdiği ismin (ad) ın son 2 karakterini alıp yeni bir string yapıyoruz
 			
-			System.out.println(yeniAd+yeniAd+yeniAd);
+			String yeniAdSon=yeniAd.concat(yeniAd+yeniAd); // concat yapıyoruz
 			
-						 
+			System.out.println(yeniAdSon); 	
+										  
 		 }
 			 
 		 else {

@@ -24,20 +24,20 @@ public class Q_18_For_While {
 		
 		System.out.print("lutfen bir cümle yazınız : ");
 
-		String cümle=scan.nextLine().toLowerCase(); // cumleyi alıp küçük harfe çevirdim
+		String cümle=scan.nextLine().toLowerCase(); // kullanıcıdan cumle alıp küçük harfe çevirdim
 		
 		
 		System.out.print("lutfen bir karakter yazınız : ");
 	
-		char karakter=scan.next().toLowerCase().charAt(0); // 1 karakter alıp küçük harfe çevirdim
+		char karakter=scan.next().toLowerCase().charAt(0); // kullanıcıdan 1 karakter alıp küçük harfe çevirdim
 		
-				int sayac=0;
+				int sayac=0; // bos bir int sayac oluşturduk 
 		
 				for (int i = 0; i < cümle.length(); i++) {
 			
-					if(cümle.charAt(i)==karakter)
+					if(cümle.charAt(i)==karakter)	// girilen cümlenin sırasıyla i indeksindeki karakter , kullanıcının girdiği karaktere eşit ise;
 						
-						sayac++;
+						sayac++;		// sayac ı bir arttır
 						
 		}
 		
