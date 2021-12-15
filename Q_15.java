@@ -28,9 +28,9 @@ public class Q_15 {
 
 		String isim=scan.next();
 		
-		if (isim.length()==3) {
+		if (isim.length()==3) {					// isim uzunluğu 3 karakter ise çalışacak 
 			
-			if (isim.charAt(0)!=isim.charAt(1)&&isim.charAt(0)!=isim.charAt(2)&&isim.charAt(1)!=isim.charAt(2)) {
+			if (isim.charAt(0)!=isim.charAt(1)&&isim.charAt(0)!=isim.charAt(2)&&isim.charAt(1)!=isim.charAt(2)) { // 3 karakterin birbirine eşit olmadığını kontrol ediyoruz
 			
 				System.out.println("Dizenin benzersiz karakterleri var");
 			
@@ -42,7 +42,7 @@ public class Q_15 {
 				}
 				
 				
-		} else {
+		} else { 								// isim uzunluğu 3 karakterden fazla veya az ise ise çalışacak 
 
 			System.out.println("isim uzunluğu 3 karakter olmalı");
 			

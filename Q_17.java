@@ -23,9 +23,9 @@ public class Q_17 {
 				
 		 if (ad.length()>=2) {		// kullanıcının en az 2 karakterli bir isim girmesini kontrol ediyoruz
 			 
-			String yeniAd=ad.substring(ad.length()-2);	// kullanıcının girdiği ismin (ad) ın son 2 karakterini alıp yeni bir string yapıyoruz
+			String yeniAd=ad.substring(ad.length()-2);	// kullanıcının girdiği ismin (ad) ın son 2 karakterini alıp yeni bir string yeniAd yapıyoruz
 			
-			String yeniAdSon=yeniAd.concat(yeniAd+yeniAd); // concat yapıyoruz
+			String yeniAdSon=yeniAd.concat(yeniAd+yeniAd); // yeniAdSon uzerine concat yapıyoruz
 			
 			System.out.println(yeniAdSon); 	
 										  
