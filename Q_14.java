@@ -29,7 +29,7 @@ public class Q_14 {
 		
 		switch (ayNumarası) {
 		
-		case 1:
+		case 1:								// 31 gün olan ayları bir grup yaptık
 		case 3:
 		case 5:
 		case 7:
@@ -40,7 +40,7 @@ public class Q_14 {
 			break;
 
 		
-		case 4:
+		case 4:								// 30 gün olan ayları bir grup yaptık
 		case 6:
 		case 9:	
 		case 11:	
@@ -48,15 +48,15 @@ public class Q_14 {
 			break;
 		
 		
-		case 2:
+		case 2:									// bu soruda en kritik ay şubat ayı , ayrı bir hesaplama yapılacagı için ayrı bir case yaptık
 			
-			System.out.println("lutfen yılı giriniz :");
+			System.out.println("lutfen yılı giriniz :"); // şubat ayını seçenlere ayrıca yılı soruyoruz
 			
 			int yıl=scan.nextInt();
 			
-			if (yıl%4==0) {
+			if (yıl%4==0) {									// eğer yıl 4 e bölündüğünde kalan 0 ise o yıl artık yıldır, şubat ayı 29 gündür
 				System.out.print("Girdiğiniz ay 29 gün");
-			} else {
+			} else {											// değilse şubat ayı 28 gündür
 				System.out.println("Girdiğiniz ay 28 gün");
 			}
 			break;

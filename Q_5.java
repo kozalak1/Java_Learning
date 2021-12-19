@@ -12,7 +12,7 @@ public class Q_5 {
 		System.out.print("lutfen bir float değer (ondalıklı sayı) giriniz :");
 		float sayi=scan.nextFloat();
 
-		short sayi2= (short) sayi;
+		short sayi2= (short) sayi; // casting (narrowing) yapıyoruz
 		
 		System.out.println(sayi2);
 		

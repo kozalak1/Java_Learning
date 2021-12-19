@@ -10,8 +10,8 @@ public class Q_8 {
 		
 			//	System.out.println();
 
-		System.out.println(Integer.MAX_VALUE);
-		System.out.println(Integer.MIN_VALUE);
+			System.out.println(Integer.MAX_VALUE);
+			System.out.println(Integer.MIN_VALUE);
 				
 				
 				 	
@@ -23,9 +23,10 @@ public class Q_8 {
 				System.out.print("lutfen DOUBLE bir sayı girin : ");
 				double sayi=scan.nextDouble();
 				
-				int sayi2=(int) sayi;
+				int sayi2=(int) sayi; // Casting yapıyoruz(narrowing) ; geniş veri tipini dar veri tipine geçmeye zorluyoruz
+										// burada bir veri kaybı oluyor.
 				
-			
+				System.out.println("girdiğiniz sayının int karşılığı :"+sayi2);
 				
 	}
 

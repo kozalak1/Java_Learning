@@ -30,7 +30,7 @@ public class Q_12 {
 		long sayi2=Scan.nextLong();
 		long toplam=sayi1+sayi2;
 		
-		if (sayi1<0 || sayi2<0 || sayi1>999999999 || sayi2>999999999 || toplam>999999999 ) {
+		if (sayi1<0 || sayi2<0 || sayi1>999999999 || sayi2>999999999 || toplam>999999999 ) { // koşullardan 1 i bile tutarsa OverFlow yazacak
 			
 			System.out.println("OverFlow");
 			

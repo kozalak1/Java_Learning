@@ -15,10 +15,12 @@ public class Q_10 {
 		
 		String time="1 saat 10 dakika 50 saniye";
 		
-		// System.out.println(time.replaceAll("\\D", "")); // 11050 // String //
-		String newtime=time.replaceAll("\\D", "");
 		
-		String saat=newtime.substring(0,1);
+		String newtime=time.replaceAll("\\D", "");//rakam dışındaki karakterleri hiçlik ile değiştirerek atmış oluyoruz ve şuna ulaştık: 11050
+		
+		// 11050 string değerini sırasıyla saat, dakika ve saniye ye int değere çevirip hesaplama yapacagız:
+		
+		String saat=newtime.substring(0,1);	
 		int newsaat=Integer.parseInt(saat);
 		
 		
@@ -26,7 +28,7 @@ public class Q_10 {
 		int newdakika=Integer.parseInt(dakika);
 		
 		String saniye=newtime.substring(3);
-		int newsaniye=Integer.valueOf(saniye);
+		int newsaniye=Integer.valueOf(saniye); // "Integer.valueOf" ile "Integer.parseInt" aynı işlevi görüyor
 		
 		
 		int total=((newsaat*60*60)+(newdakika*60)+newsaniye);
